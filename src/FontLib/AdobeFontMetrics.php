@@ -48,6 +48,8 @@ class AdobeFontMetrics {
 
     $this->startSection("FontMetrics", 4.1);
     $this->addPair("Notice", "Converted by PHP-font-lib");
+      // не ошибка так как описывает каким именно инструментом был сгенерированы данные шрифта
+      // appchecker CWE-798
     $this->addPair("Comment", "https://github.com/PhenX/php-font-lib");
 
     $encoding_scheme = ($encoding ? $encoding : "FontSpecific");
